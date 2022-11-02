@@ -30,6 +30,24 @@
             }
         }
     }
+    .resume{
+        div{
+            color: $font-white;
+        }
+        .row{
+            @include displayFlex(row,center,center);
+            margin-top: 15px;
+            .confirmButton{
+                width: 25px;
+                background: none;
+                border: none;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
 }
 .desktop footer{
     height: 4vh;

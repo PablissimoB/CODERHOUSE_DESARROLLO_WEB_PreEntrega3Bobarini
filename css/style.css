@@ -101,6 +101,32 @@
   .mobile main .mapMobile {
     width: 100%;
     height: 60vh; }
+  .mobile main .orderImg {
+    width: 30px; }
+  .mobile main .quantities {
+    margin-top: 37.5px; }
+    .mobile main .quantities input {
+      margin-top: 5px;
+      border-radius: 20px;
+      width: 60%;
+      text-align: center; }
+  .mobile main .check {
+    background-color: black; }
+    .mobile main .check h1 {
+      color: white;
+      font-size: 18px;
+      margin-top: 3%; }
+    .mobile main .check .detailMob input {
+      width: 100%;
+      margin-top: 5px;
+      border-radius: 20px;
+      text-align: center; }
+    .mobile main .check .detailMob .delete {
+      margin-top: 5px;
+      width: 20px;
+      border: none; }
+      .mobile main .check .detailMob .delete .trashIcon {
+        width: 100%; }
 
 .desktop main h1 {
   color: white;
@@ -118,6 +144,9 @@
 
 .desktop main ul {
   list-style: none; }
+
+.desktop main .orderImg {
+  width: 40px; }
 
 .desktop main .main {
   height: 62vh; }
@@ -139,8 +168,6 @@
           color: white; }
         .desktop main .main .menu ul li a:hover {
           color: dimgray; }
-    .desktop main .main .menu .orderImg {
-      width: 40px; }
     .desktop main .main .menu .detalle {
       height: 80%;
       display: flex;
@@ -259,7 +286,43 @@
     color: white; }
 
 .desktop main .form {
+  height: 62vh;
   background-color: black; }
+  .desktop main .form input {
+    width: 100%;
+    margin-top: 10px; }
+  .desktop main .form .detail .delete {
+    margin-top: 10px;
+    border: none;
+    width: 32px; }
+    .desktop main .form .detail .delete .trashIcon {
+      width: 100%; }
+  .desktop main .form .detail input {
+    border-radius: 20px;
+    text-align: center; }
+  .desktop main .form .information {
+    margin-top: 150px; }
+    .desktop main .form .information .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+  .desktop main .form select {
+    width: 100%; }
+  .desktop main .form .buttonOrder {
+    margin-top: 50px;
+    width: 105px;
+    border-radius: 20px;
+    background: #1E1E1E;
+    color: white; }
+
+.desktop main .orderRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .desktop main .orderRight .total li {
+    color: white; }
 
 .mobile footer .rectangles {
   border: 1px solid black;
@@ -294,6 +357,22 @@
     align-items: end; }
     .mobile footer .col-8 .detalle table {
       color: white; }
+
+.mobile footer .resume div {
+  color: white; }
+
+.mobile footer .resume .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px; }
+  .mobile footer .resume .row .confirmButton {
+    width: 25px;
+    background: none;
+    border: none; }
+    .mobile footer .resume .row .confirmButton img {
+      width: 100%; }
 
 .desktop footer {
   height: 4vh;
@@ -338,7 +417,7 @@
     main .tray .absolute {
       position: absolute;
       top: 30vh;
-      left: 42vw;
+      left: 47vw;
       width: 58%;
       display: flex; }
       main .tray .absolute div {
@@ -349,7 +428,7 @@
       main .tray .absolute button {
         margin-bottom: 15px;
         margin-right: 25px;
-        width: 20vw; }
+        width: 16vw; }
       main .tray .absolute .imgFood {
         width: 100%; }
   footer {
@@ -405,7 +484,9 @@
   footer {
     height: 30vh; }
     footer h1 {
-      font-size: 16px; } }
+      font-size: 16px; }
+    footer .resume div {
+      font-size: 12px; } }
 
 /*Resto*/
 @media (min-width: 321px) and (max-width: 768px) {

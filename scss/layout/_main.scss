@@ -33,6 +33,42 @@
         width: 100%;
         height: 60vh;
     }
+    .orderImg{
+        width: 30px;
+    }
+    .quantities{
+        margin-top: 37.5px;
+        input{
+            margin-top: 5px;
+            border-radius: 20px;
+            width: 60%;
+            text-align: center;
+        }
+    }
+    .check{
+        background-color: $background-black;
+        h1{
+            @include fontH1(18px);
+        }
+        .detailMob{
+            input{
+                width: 100%;
+                margin-top: 5px;
+                border-radius: 20px;
+                text-align: center;
+            }
+            .delete{
+                margin-top: 5px;
+                width: 20px;
+                border: none;
+                .trashIcon{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
 }
 
 .desktop main{
@@ -50,6 +86,9 @@
     }
     ul{
         list-style: none;
+    }
+    .orderImg{
+        width: 40px;
     }
     .main{
         height: 62vh;
@@ -73,9 +112,7 @@
                     }
                 }
             }
-            .orderImg{
-                width: 40px;
-            }
+
             .detalle{
                 height: 80%;
                 @include displayFlex(row,'',end);
@@ -207,6 +244,50 @@
         }
     }
     .form{
+        height: 62vh;
         background-color: $background-black;
+        input{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .detail{
+            .delete{
+                margin-top: 10px;
+                border: none;
+                width: 32px;
+                .trashIcon{
+                    width: 100%;
+                }
+            }
+            input{
+                border-radius: 20px;
+                text-align: center;
+            }
+        }
+
+        .information{
+            margin-top: 150px;
+            .row{
+                @include displayFlex(row,center,center);
+            }
+        }
+        select{
+            width: 100%;
+        }
+        .buttonOrder{
+            margin-top: 50px;
+            width: 105px;
+            border-radius: 20px;
+            background:$background-gray;
+            color: $font-white;
+        }
+    }
+    .orderRight{
+        @include displayFlex(row,center,center);
+        .total{
+            li{
+                color: $font-white;
+            }
+        }
     }
 }

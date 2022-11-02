@@ -52,49 +52,75 @@
     
                     <div class="col-8" id="middle">
 
-                        <div class="flex orderTitle">
-                            <div>
+                        <div class="row">
+                            <div class="col-1">
                                 <img src="../assets/img/order.jpg" class="orderImg" alt="">
                             </div>
-                            <h1 class="paddingTop fontColorWhite">ORDER</h1>
+                            <div class="col-4">
+                                <h1>ORDER</h1>
+                            </div>
                         </div>
         
                         <div class="container-fluid">
                             <form method="post" action="">
         
                                 <div class="detail">
-                                    <div class="flex">
-                                        <input type="number" class="quantity" value="1" name="" id="">
-                                        <input type="text" name="" class="description" readonly="true"
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <input type="number" value="1" name="" id="">
+                                        </div>
+                                        <div class="col-10">
+                                            <input type="text" name="" readonly="true"
                                             value="SALAD 1: MEDITERRANEAN" id="">
-                                        <button class="delete"><img src="../assets/img/trash.jpg" class="trashIcon" alt="">
-                                        </button>
+                                        </div>
+                                        <div class="col-1">
+                                            <button class="delete"><img src="../assets/img/trash.jpg" class="trashIcon" alt="">
+                                            </button>
+                                        </div>
+                                        
                                     </div>
-                                    <div class="flex">
-                                        <input type="number" class="quantity" value="2" name="" id="">
-                                        <input type="text" name="" class="description" readonly="true"
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <input type="number" value="2" name="" id="">
+                                        </div>
+                                        <div class="col-10">
+                                            <input type="text" name="" readonly="true"
                                             value="SALAD 2: PARMESSAN" id="">
-                                        <button class="delete"><img src="../assets/img/trash.jpg" class="trashIcon" alt="">
-                                        </button>
+                                        </div>
+                                        <div class="col-1">
+                                            <button class="delete"><img src="../assets/img/trash.jpg" class="trashIcon" alt="">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
         
                                 <div class="information">
-                                    <div class="flex flexCenter">
-                                        <input type="text" name="" class="name" placeholder="Name" id="">
-                                        <input type="email" class="mail" placeholder="Email" id="">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <input type="text" name="" placeholder="Name" id="">
+                                        </div>
+                                        <div class="col-5">
+                                            <input type="email" placeholder="Email" id="">
+                                        </div>                                        
                                     </div>
-                                    <div class="flex flexCenter">
-                                        <input type="text" class="adresses" placeholder="Adress" id="">
-                                        <input type="tel" class="telephone" placeholder="Telephone" id="">
-                                        <select name="" id="">
-                                            <option value="0">Payment Method</option>
-                                            <option value="CreditCard">CreditCard</option>
-                                            <option value="DebitCard">DebitCard</option>
-                                            <option value="Cash">Cash</option>
-                                        </select>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input type="text" class="adresses" placeholder="Adress" id="">
+                                        </div>
+                                        <div class="col-2">
+                                            <input type="tel" class="telephone" placeholder="Telephone" id="">
+                                        </div>
+                                        <div class="col-4">
+                                            <select name="" id="">
+                                                <option value="0">Payment Method</option>
+                                                <option value="CreditCard">CreditCard</option>
+                                                <option value="DebitCard">DebitCard</option>
+                                                <option value="Cash">Cash</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="flex flexCenter">
+                                    <div class="row">
                                         <input type="submit" class="buttonOrder" value="Order">
                                     </div>
                                 </div>
@@ -104,14 +130,15 @@
                     </div>
     
                     <!--Middle Order Right-->
-                    <div class="menu col-2">
+                    <div class="menu col-2 orderRight">
                         <div class="row">
-                            <p>
-                                Total:
-                            </p>
-                            <p>
-                                $ 0.00
-                            </p>
+                            <div class="total">
+                                <ul>
+                                    <li>Total:</li>
+                                    <li>$ 0.00</li>
+                                </ul>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -173,20 +200,48 @@
 
             <main class="row">
                 <div class="col-4">
-                    <h1>ABOUT US</h1>
-                    <ul>
-                        <li><a href="../index.html">What</a></li>
-                        <li><a href="who.html">Who</a></li>
-                        <li><a href="where.html">Where</a></li>
-                    </ul>
-                </div>
-                <div class="col-8 med contentAnimation">
-                    <div>
-                        <p><strong>HEAD CHEF AND CO-FOUNDER: </strong> MONSERRAT KINEN, Juan Pablo</p>
-                        <p><strong>OUR KITCHENERS: </strong> ALVARO, Segismundo - TORRES, Francina</p>
-                        <p><strong>OUR BAKERS: </strong> DIAZ, Cecilia - MONSERRAT, Ana Laura</p>
-                        <p><strong>OUR PASTRIES: </strong>MONSERRAT KINEN, Juan Pablo - GONZALEZ, Paolo</p>
+                    <div class="container-fluid quantities">
+                        <div class="row">
+                            <input type="number" value="1" name="" id="">
+                        </div>
+                        <div class="row">
+                            <input type="number" value="2" name="" id="">
+                        </div>
                     </div>
+                </div>
+
+                <div class="col-8 check contentAnimation">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../assets/img/order.jpg" class="orderImg" alt="">
+                        </div>
+                        <h1 class="col-10">ORDER</h1>
+                    </div>
+
+                    <div class="detailMob">
+                        <div class="row">
+                            <div class="col-10">
+                                <input type="text" name="" readonly="true"
+                                    value="SALAD 1: MEDITERRANEAN" id="">
+                            </div>
+                            <div class="col-1">
+                                <button class="delete"><img src="../assets/img/trash.jpg" class="trashIcon"
+                                        alt=""> </button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-10">
+                                <input type="text" name="" readonly="true"
+                                    value="SALAD 2: PARMESSAN" id="">
+                            </div>
+                            <div class="col-1">
+                                <button class="delete"><img src="../assets/img/trash.jpg" class="trashIcon"
+                                        alt=""> </button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </main>
 
@@ -213,29 +268,37 @@
                         </div>
                     </div>
                     <div class="col-8">
-                        <div class="row titulo">
-                            <div class="col-3">
-                                <img src="../assets/img/order.jpg" class="orderImg" alt="carrito">
+                        
+                        <div class="row">
+                            <input type="text" class="col-12" placeholder="Name" id="">
+                        </div>
+                        <div class="row"><input type="email" class="col-12" placeholder="Email" id=""></div>
+                        <div class="row"><input type="text" class="col-12" placeholder="Adress" id=""></div>
+                        <div class="row"><input type="tel" class="col-12" placeholder="Telephone" id=""></div>
+                        <div class="row">
+                            <select name="" class="col-12" id="">
+                                <option value="0">Payment Method</option>
+                                <option value="CreditCard">CreditCard</option>
+                                <option value="DebitCard">DebitCard</option>
+                                <option value="Cash">Cash</option>
+                            </select>
+                        </div>
+
+                        <div class="container-fluid resume">
+                            <div class="row">
+                                <div class="col-4">
+                                    TOTAL
+                                </div>
+                                <div class="col-6">
+                                    $ 3200.00
+                                </div>
+                                <div class="col-2">
+                                    <button class="confirmButton">
+                                        <img src="../assets/img/confirm.png" class="" alt="">
+                                    </button>
+                                </div>
                             </div>
-                            <h1 class="col-9">ORDER</h1>
-                        </div>
-                        <div class="row detalle">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td>Total: </td>
-                                        <td>$ 0.00</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                            <button class="btn btn-secondary" onclick="animacionMobile ();">Check</button>
-                        </div>
+
                     </div>
                 </div>
             </footer>
