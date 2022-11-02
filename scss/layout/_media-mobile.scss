@@ -1,0 +1,56 @@
+/*Media Smartphones*/
+/*Fold*/
+@media (min-width: 280px) and (max-width: 320px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+
+    header{
+        h1{
+            font-size: 16px;
+        }
+        height: 15vh;
+    }
+    main{
+        h1{
+            font-size: 15px;
+        }
+        h3{
+            font-size: 16px;    
+        }
+        height: 50vh;
+        font-size: 12px;
+    }
+    footer{
+        h1{
+            font-size: 16px;
+        }
+        height: 30vh;
+    }
+}
+/*Resto*/
+@media(max-width:768px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+
+    header{
+        height: 15vh;
+    }
+    main{
+        h3{
+            font-size: 18px;    
+        }
+        height: 64vh;
+        font-size: 13px;
+    }
+    footer{
+        height: 20vh;
+    }
+}

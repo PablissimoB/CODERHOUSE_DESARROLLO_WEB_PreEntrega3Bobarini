@@ -1,0 +1,105 @@
+.mobile main{
+    border: 1px solid black;
+    .col-4{
+        background-color: $background-black;
+        h1{
+            @include fontH1(18px);
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-top: 2.5%;
+                margin-left: -10%;
+                a{
+                    text-decoration: none;
+                    color: $font-white;
+                }
+                a:hover{
+                    color: $hover-gray;
+                }
+            }
+        }
+    }
+    .col-8{
+        p{
+            text-indent: 5%;
+        }
+    }
+}
+
+.desktop main{
+    h1{
+        @include fontH1(20px);
+    }
+    h3{
+        font-size: 20px;
+        color: $font-black; 
+    }
+    p{
+        font-size: 18px;
+        color: $font-black; 
+        text-indent: 5%;
+    }
+    ul{
+        list-style: none;
+    }
+    .main{
+        height: 62vh;
+        .menu{
+            background-color: $background-black;
+    
+            ul{
+                @include displayFlex(column,center,'');
+                li{
+                    margin-top: 2.5%;
+                    a{
+                        text-decoration: none;
+                        color: $font-white;
+                    }
+                    a:hover{
+                        color: $hover-gray;
+                    }
+                }
+            }
+            .orderImg{
+                width: 40px;
+            }
+        }
+        .col-8{
+            padding-left: 8%;
+            @include displayFlex(row,center,center);
+            .imagen{
+                border-radius: 5%;
+                width: 80%;
+                max-width: 820px;
+                margin-right: 5%;
+                margin-bottom: 1%;
+            }
+        }
+    }
+    
+    .bottom{
+        border: 1px solid black;
+        height: 12vh;
+        .col-2{
+            @include displayFlex(row,center,center);
+            height: 12vh;
+            ul{
+                @include displayFlex(column,center,'');
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $font-black;
+                    }
+                }
+            }
+        }
+        .col-8{
+            @include displayFlex(row,center,center);
+            background-color: $background-black;
+            color: $font-white;
+        }
+    }
+
+}

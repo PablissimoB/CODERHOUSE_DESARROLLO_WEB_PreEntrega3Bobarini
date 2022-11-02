@@ -1,0 +1,41 @@
+.mobile footer{
+    .rectangles{
+        border: 1px solid black;
+        margin-bottom: 1px;
+        ul{
+            @include displayFlex(column,'','');
+            padding-left: 15px;
+            list-style: none;
+            
+        }
+    }
+    .col-8{
+        @include displayFlex(column,'','');
+        background-color: $background-black;
+        .orderImg{
+            width: 40px;
+            padding-top: 5px;
+        }
+        .titulo{
+            h1{
+                padding-top: 5px;
+                @include fontH1(18px);
+            }
+        }
+        .detalle{
+            height: 66%;
+            @include displayFlex(row,'',end);
+            table{
+                color: $font-white;
+            }
+        }
+    }
+}
+.desktop footer{
+    margin-top: 2.5%;
+    background-color:$background-gray;
+    color:$font-white;
+    div{
+        @include displayFlex(row,center,center);
+    }
+}

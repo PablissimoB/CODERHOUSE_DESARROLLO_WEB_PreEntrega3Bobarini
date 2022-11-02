@@ -1,0 +1,26 @@
+/*Media Tablets*/
+@media (min-width:769px)  and (max-width:992px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+    header{
+        height: 15vh;
+        col{
+            
+        }
+    }
+    main{
+        h3{
+            font-size: 20px;    
+        }
+        height: 64vh;
+        font-size: 15px;
+    }
+    footer{
+        height: 20vh;
+    }
+
+}
