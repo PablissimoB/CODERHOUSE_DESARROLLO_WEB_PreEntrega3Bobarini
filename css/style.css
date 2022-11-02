@@ -83,6 +83,9 @@
       color: white;
       font-size: 18px;
       margin-top: 3%; }
+    .mobile main .col-4 h2 {
+      font-size: 18px;
+      color: white; }
     .mobile main .col-4 ul {
       list-style: none; }
       .mobile main .col-4 ul li {
@@ -95,6 +98,9 @@
           color: dimgray; }
   .mobile main .col-8 p {
     text-indent: 5%; }
+  .mobile main .mapMobile {
+    width: 100%;
+    height: 60vh; }
 
 .desktop main h1 {
   color: white;
@@ -116,7 +122,11 @@
 .desktop main .main {
   height: 62vh; }
   .desktop main .main .menu {
+    height: 62vh;
     background-color: black; }
+    .desktop main .main .menu h2 {
+      font-size: 20px;
+      color: white; }
     .desktop main .main .menu ul {
       display: flex;
       flex-direction: column;
@@ -131,18 +141,96 @@
           color: dimgray; }
     .desktop main .main .menu .orderImg {
       width: 40px; }
+    .desktop main .main .menu .detalle {
+      height: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: "";
+      align-items: end; }
+      .desktop main .main .menu .detalle table {
+        margin-top: 400px;
+        color: white; }
   .desktop main .main .col-8 {
-    padding-left: 8%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
+    .desktop main .main .col-8 .padding {
+      padding-left: 8%; }
+    .desktop main .main .col-8 .ubicacion {
+      width: 100%; }
     .desktop main .main .col-8 .imagen {
       border-radius: 5%;
       width: 80%;
       max-width: 820px;
       margin-right: 5%;
       margin-bottom: 1%; }
+    .desktop main .main .col-8 .map {
+      height: 60vh;
+      width: 100%; }
+    .desktop main .main .col-8 .tray {
+      width: 100%; }
+      .desktop main .main .col-8 .tray .imgTray {
+        margin-top: 2%;
+        width: 100%;
+        height: 50vh; }
+      .desktop main .main .col-8 .tray .absolute {
+        position: absolute;
+        top: 23vh;
+        left: 22vw;
+        right: 15vw;
+        display: flex; }
+        .desktop main .main .col-8 .tray .absolute button {
+          width: 53%;
+          background-color: transparent;
+          border: none; }
+        .desktop main .main .col-8 .tray .absolute button:hover {
+          opacity: 0.6;
+          transition: 1s; }
+        .desktop main .main .col-8 .tray .absolute button:active {
+          border: 2px solid green;
+          transition: 0.2s; }
+      .desktop main .main .col-8 .tray .imgFood {
+        width: 100%;
+        max-width: 250px; }
+      .desktop main .main .col-8 .tray .descriptionFood {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3.5%;
+        border-radius: 10px;
+        background-color: #D9D9D9;
+        width: 45%; }
+        .desktop main .main .col-8 .tray .descriptionFood p {
+          font-size: small; }
+        .desktop main .main .col-8 .tray .descriptionFood ul {
+          margin-left: -12%;
+          list-style: circle; }
+          .desktop main .main .col-8 .tray .descriptionFood ul li {
+            font-size: 80%; }
+      .desktop main .main .col-8 .tray .absoluteBL {
+        color: transparent;
+        position: absolute;
+        top: 37vh;
+        left: 17vw;
+        bottom: 48vh;
+        width: 3.5%;
+        opacity: 0;
+        border: none; }
+      .desktop main .main .col-8 .tray .absoluteBL:hover {
+        cursor: pointer; }
+      .desktop main .main .col-8 .tray .absoluteBR {
+        color: transparent;
+        position: absolute;
+        top: 37vh;
+        left: 79vw;
+        bottom: 48vh;
+        width: 3.5%;
+        opacity: 0;
+        border: none; }
+      .desktop main .main .col-8 .tray .absoluteBR:hover {
+        cursor: pointer; }
 
 .desktop main .bottom {
   border: 1px solid black;
@@ -169,6 +257,9 @@
     align-items: center;
     background-color: black;
     color: white; }
+
+.desktop main .form {
+  background-color: black; }
 
 .mobile footer .rectangles {
   border: 1px solid black;
@@ -205,6 +296,7 @@
       color: white; }
 
 .desktop footer {
+  height: 4vh;
   margin-top: 2.5%;
   background-color: #1E1E1E;
   color: white; }
@@ -234,6 +326,32 @@
     font-size: 15px; }
     main h3 {
       font-size: 20px; }
+    main .tray .row {
+      display: flex;
+      flex-direction: "";
+      justify-content: center;
+      align-items: center; }
+    main .tray .imgTray {
+      margin-top: 10%;
+      width: 100%;
+      height: 52vh; }
+    main .tray .absolute {
+      position: absolute;
+      top: 30vh;
+      left: 42vw;
+      width: 58%;
+      display: flex; }
+      main .tray .absolute div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      main .tray .absolute button {
+        margin-bottom: 15px;
+        margin-right: 25px;
+        width: 20vw; }
+      main .tray .absolute .imgFood {
+        width: 100%; }
   footer {
     height: 20vh; } }
 
@@ -255,13 +373,42 @@
       font-size: 15px; }
     main h3 {
       font-size: 16px; }
+    main .menues ul {
+      margin-left: -20px; }
+    main .tray .row {
+      display: flex;
+      flex-direction: "";
+      justify-content: center;
+      align-items: center; }
+    main .tray .imgTray {
+      margin-top: 15%;
+      margin-left: -5%;
+      width: 100%;
+      height: 44vh; }
+    main .tray .absolute {
+      position: absolute;
+      top: 30vh;
+      left: 29.5vw;
+      width: 60%;
+      display: flex; }
+      main .tray .absolute div {
+        display: flex;
+        flex-direction: column;
+        justify-content: "";
+        align-items: ""; }
+      main .tray .absolute button {
+        margin-bottom: 10px;
+        margin-right: 13px;
+        width: 18vw; }
+      main .tray .absolute .imgFood {
+        width: 100%; }
   footer {
     height: 30vh; }
     footer h1 {
       font-size: 16px; } }
 
 /*Resto*/
-@media (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 768px) {
   .desktop {
     display: none; }
   .mobile {
@@ -273,5 +420,78 @@
     font-size: 13px; }
     main h3 {
       font-size: 18px; }
+    main .tray .row {
+      display: flex;
+      flex-direction: "";
+      justify-content: center;
+      align-items: center; }
+    main .tray .imgTray {
+      margin-top: 15%;
+      width: 100%;
+      height: 52vh; }
+    main .tray .absolute {
+      position: absolute;
+      top: 30vh;
+      left: 42vw;
+      width: 58%;
+      display: flex; }
+      main .tray .absolute div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      main .tray .absolute button {
+        margin-bottom: 15px;
+        margin-right: 13px;
+        width: 19vw; }
+      main .tray .absolute .imgFood {
+        width: 100%; }
   footer {
     height: 20vh; } }
+
+/*Animaciones*/
+#box-object {
+  background-color: black;
+  width: 0.01vw;
+  height: 0.01vh;
+  visibility: hidden; }
+
+.contentAnimation {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+.scale-in-tl {
+  animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes scale-in-tl {
+  0% {
+    transform: scale(0);
+    transform-origin: 0 0;
+    opacity: 0; }
+  100% {
+    transform: scale(2000);
+    transform-origin: 0 0;
+    opacity: 0.85; } }
+
+.scale-in-tl-mb {
+  animation: scale-in-tl-mb 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes scale-in-tl-mb {
+  0% {
+    transform: scale(0);
+    transform-origin: 0 0;
+    opacity: 0; }
+  100% {
+    transform: scale(200);
+    transform-origin: 0 0;
+    opacity: 0.85; } }
+
+li:hover a {
+  color: dimgray; }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

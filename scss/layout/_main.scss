@@ -5,6 +5,10 @@
         h1{
             @include fontH1(18px);
         }
+        h2{
+            font-size: 18px;
+            color: white;
+        }
         ul{
             list-style: none;
             li{
@@ -24,6 +28,10 @@
         p{
             text-indent: 5%;
         }
+    }
+    .mapMobile{
+        width: 100%;
+        height: 60vh;
     }
 }
 
@@ -46,8 +54,12 @@
     .main{
         height: 62vh;
         .menu{
+            height: 62vh;
             background-color: $background-black;
-    
+            h2{
+                font-size: 20px;
+                color: white;
+            }
             ul{
                 @include displayFlex(column,center,'');
                 li{
@@ -64,10 +76,24 @@
             .orderImg{
                 width: 40px;
             }
+            .detalle{
+                height: 80%;
+                @include displayFlex(row,'',end);
+                table{
+                    margin-top: 400px;
+                    color: $font-white;
+                }
+            }
         }
         .col-8{
-            padding-left: 8%;
             @include displayFlex(row,center,center);
+            .padding{
+                padding-left:8%;
+            }
+
+            .ubicacion{
+                width: 100%;
+            }
             .imagen{
                 border-radius: 5%;
                 width: 80%;
@@ -75,9 +101,88 @@
                 margin-right: 5%;
                 margin-bottom: 1%;
             }
+            .map{
+                height: 60vh;
+                width: 100%;
+            }
+            .tray{
+                width: 100%;
+                .imgTray{
+                    margin-top: 2%;
+                    width: 100%;
+                    height: 50vh;
+                }
+                .absolute {
+                    position: absolute;
+                    top: 23vh;
+                    left: 22vw;
+                    right: 15vw;
+                    display: flex;
+                    button{
+                        width: 53%;
+                        background-color: transparent;
+                        border: none;
+                    }
+                    button:hover{
+                        opacity: 0.6;
+                        transition: 1s;
+                    }
+                    button:active{
+                        border: 2px solid green;
+                        transition: 0.2s;
+                    }
+                  }
+                  .imgFood{
+                    width: 100%;
+                    max-width: 250px;
+                }
+                .descriptionFood{
+                    @include displayFlex(column,center,center);
+                    margin-left: 3.5%;
+                    border-radius: 10px;
+                    background-color: #D9D9D9;
+                    width: 45%;
+                    p{
+                        font-size: small;
+                    }
+                    ul{
+                        margin-left: -12%;
+                        list-style:circle;
+                        li{
+                            font-size:80%;
+                        }
+                    }
+                }
+                .absoluteBL{
+                    color: transparent;
+                    position: absolute;
+                    top: 37vh;
+                    left: 17vw;
+                    bottom: 48vh;
+                    width: 3.5%;
+                    opacity: 0;
+                    border: none;
+                }
+                .absoluteBL:hover{
+                    cursor: pointer;
+                }
+                .absoluteBR{
+                    color: transparent;
+                    position: absolute;
+                    top:  37vh;
+                    left: 79vw;
+                    bottom: 48vh;
+                    width: 3.5%;
+                    opacity: 0;
+                    border: none;
+                }
+                .absoluteBR:hover{
+                    cursor: pointer;
+                }
+            }
         }
     }
-    
+
     .bottom{
         border: 1px solid black;
         height: 12vh;
@@ -101,5 +206,7 @@
             color: $font-white;
         }
     }
-
+    .form{
+        background-color: $background-black;
+    }
 }
