@@ -57,14 +57,15 @@
                 border-radius: 20px;
                 text-align: center;
             }
-            .delete{
-                margin-top: 5px;
-                width: 20px;
-                border: none;
-                .trashIcon{
-                    width: 100%;
-                }
-            }
+
+        }
+    }
+    .delete{
+        margin-top: 5px;
+        width: 20px;
+        border: none;
+        .trashIcon{
+            width: 100%;
         }
     }
 
@@ -92,13 +93,14 @@
     }
     .main{
         height: 62vh;
+        h2{
+            font-size: 20px;
+            color: white;
+        }
         .menu{
             height: 62vh;
             background-color: $background-black;
-            h2{
-                font-size: 20px;
-                color: white;
-            }
+
             ul{
                 @include displayFlex(column,center,'');
                 li{
@@ -114,12 +116,11 @@
             }
 
             .detalle{
-                height: 80%;
                 @include displayFlex(row,'',end);
-                table{
-                    margin-top: 400px;
-                    color: $font-white;
-                }
+            }
+            table{
+                margin-top: 40vh;
+                color: $font-white;
             }
         }
         .col-8{
@@ -133,10 +134,12 @@
             }
             .imagen{
                 border-radius: 5%;
-                width: 80%;
+                width: 68%;
                 max-width: 820px;
-                margin-right: 5%;
-                margin-bottom: 1%;
+                min-width: 200px;
+                margin-left: 2vw;
+                margin-right: 2vw;
+                margin-bottom: 1vh;
             }
             .map{
                 height: 60vh;
@@ -159,6 +162,7 @@
                         width: 53%;
                         background-color: transparent;
                         border: none;
+                        max-width: 200px;
                     }
                     button:hover{
                         opacity: 0.6;
@@ -171,14 +175,16 @@
                   }
                   .imgFood{
                     width: 100%;
-                    max-width: 250px;
+                    
                 }
                 .descriptionFood{
                     @include displayFlex(column,center,center);
-                    margin-left: 3.5%;
+                    margin-left: 3%;
                     border-radius: 10px;
                     background-color: #D9D9D9;
                     width: 45%;
+                    max-width: 200px;
+                    font-size:90%;
                     p{
                         font-size: small;
                     }
@@ -186,7 +192,7 @@
                         margin-left: -12%;
                         list-style:circle;
                         li{
-                            font-size:80%;
+                            font-size:75%;
                         }
                     }
                 }
@@ -265,12 +271,7 @@
             }
         }
 
-        .information{
-            margin-top: 150px;
-            .row{
-                @include displayFlex(row,center,center);
-            }
-        }
+
         select{
             width: 100%;
         }
@@ -280,6 +281,12 @@
             border-radius: 20px;
             background:$background-gray;
             color: $font-white;
+        }
+    }
+    .information{
+        margin-top: 150px;
+        .row{
+            @include displayFlex(row,center,center);
         }
     }
     .orderRight{
